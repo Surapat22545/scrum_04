@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        background-color: #EBE0D0; /* Set your desired background color */
+       /* Align text to the center */
+    }
+</style>
+    <title>แนบสลิปการชำระเงิน</title>
+</head>
+<body>
+    <p><a href="หน้าหลัก.html">กลับไปยังหน้าหลัก</a></p>
+    <div>
+    <div style="align-items: center;  text-align: center; ">
+    <!-- นำรูปภาพมาจากไฟล์ท้องถิ่น -->
+    <img src="https://scontent-sin6-4.xx.fbcdn.net/v/t1.15752-9/365508152_882063799776383_2278890793993284592_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHWzAWHMWX-8CdV0kGtdfZZD9AmUKf3Y2gP0CZQp_djaCbLl5PkkasYUErlinQHQNuciuX-ezpuia9r1QynHeep&_nc_ohc=hmCf48bxT7wAX9QW69S&_nc_ht=scontent-sin6-4.xx&oh=03_AdTUN93X7d03atRHGzXXDKnDYuDQ5KxlTdM42Egb-eZudA&oe=65812365" alt="รูปภาพที่บ่งชี้ถึงหน้าหลัก" width="300">
+
+    <h1>แนบสลิปการชำระเงิน</h1>
+
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <label for="slip">เลือกไฟล์สลิป:</label>
+        <input type="file" id="slip" name="slip" accept=".pdf, .jpg, .png" required>
+
+        <button type="submit">Summit</button>
+    </form>
+</div>
+</div>
+
+</body>
+</html>
