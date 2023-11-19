@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Room Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color:#FFC6CF;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+
+        .room {
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 1em;
+            margin: 1em;
+            width: 200px;
+            text-align: center;
+            background-color:#FFC6CF;
+        }
+
+        .room button {
+            background-color: #FCDEE2;
+            color: #000000;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color:#FFC6CF;
+            color: #000000;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filo</h1>
+    </header>
+
+    <section>
+        <div class="room" id="room1">
+            <h2>Standard room</h2>
+            <p>มี 20 ห้อง มีแมวได้ 1 ตัว</p>
+            <p>ราคา 250 บาท</p>
+            <button onclick="reserveRoom(1)">Reserve</button>
+            
+        </div>
+
+        <div class="room" id="room2">
+            <h2>Superior room</h2>
+            <p>มี 10 ห้อง  มีแมวได้ 3 ตัว</p>
+            <p>ราคา 400 บาท</p>
+            <button onclick="reserveRoom(2)">Reserve</button>
+        </div>
+
+        <div class="room" id="room3">
+            <h2>Deluxe room</h2>
+            <p>มี 3 ห้อง  มีแมวได้ 6 ตัว</p>
+            <p>ราคา 550 บาท</p>
+            <button onclick="reserveRoom(3)">Reserve</button>
+        </div>
+
+        <div class="room" id="room4">
+            <h2>Suite room</h2>
+            <p>มี 1 ห้อง  มีแมวได้ 10 ตัว</p>
+            <p>ราคา 900 บาท</p>
+            <button onclick="reserveRoom(4)">Reserve</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cat Hotel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function reserveRoom(roomNumber) {
+            alert('Room ' + roomNumber + ' reserved!');
+            // ทำการจองห้อง และสามารถเพิ่มโค้ดเพิ่มเติมในฟังก์ชันนี้ได้
+        }
+    </script>
+</body>
+</html>
